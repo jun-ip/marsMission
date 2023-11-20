@@ -9,7 +9,7 @@
 using namespace std;
 
 
-int mapSize = 89;
+int mapSize;
 
 //struct to contain location of point on map
 struct location {
@@ -284,7 +284,6 @@ int main()
 
 	int round = 0;
 
-	int loc_number = 91;
 
 	int maxOsmium = 0;
 
@@ -325,6 +324,40 @@ int main()
 
 	};
 
+	vector<location> targetList2 = {
+	{56, 13},
+	{46, 12},
+	{44, 4},
+	{38, 1},
+	{38, 13},
+	{27, 16},
+	{22, 7},
+	{17, 6},
+	{3, 3},
+	{10, 17},
+	{20, 21},
+	{3, 23},
+	{18, 25},
+	{34, 25},
+	{47, 29},
+	{57, 36},
+	{51, 43},
+	{45, 39},
+	{31, 37},
+	{20, 38},
+	{11, 38},
+	{1, 39},
+	{32, 41},
+	{40, 43},
+	{55, 55},
+	{32, 54},
+	{23, 50},
+	{20, 46},
+	{12, 48},
+	{10, 50},
+	{7, 55},
+	};
+
 	vector<location> centerSquare = {
 		{44, 44}, //CENTER
 		{45, 44}, //MIDDLE RIGHT
@@ -338,12 +371,54 @@ int main()
 
 	};
 
+	vector<location> centerSquare2 = {
+		{29, 29}, //CENTER
+		{30, 29}, //MIDDLE RIGHT
+		{28, 29}, //MIDDLE LEFT
+		{29, 28}, //TOP MIDDLE
+		{29, 30}, //BOTTOM MIDDLE
+		{28, 28}, //TOP LEFT
+		{30, 30}, //BOTTOM RIGHT
+		{28, 30}, //BOTTOM LEFT
+		{30, 28}, //TOP RIGHT
+
+	};
+
 	std::string serverFileName = "game/s" + std::to_string(id) + "_" + std::to_string(round) +
 		".txt";
 	std::ifstream input(serverFileName);
 
 	//getting base location initially
-	int current_line = 0;
+	string mapLine;
+	getline(input, mapLine);
+	istringstream iiss(mapLine);
+	iiss >> mapSize;
+	int loc_number;
+	int acid_round = 140;
+	location center1(44, 44);
+	location center2(29, 29);
+	location center(-1, -1);
+	location target(-1, -1);
+	vector <location>targetListings;
+	vector <location>mainSquare;
+
+	if (mapSize == 59) {
+		loc_number = 61;
+		center = center2;
+		target = center2;
+		targetListings = targetList2;
+		mainSquare = centerSquare2;
+
+	}
+	else {
+		loc_number = 91;
+		center = center1;
+		center = center1;
+		targetListings = targetList;
+		mainSquare = centerSquare;
+	}
+
+	int current_line = 1;
 	string line;
 	while (current_line != loc_number || !input.eof()) {
 		current_line++;
@@ -360,9 +435,7 @@ int main()
 	iss >> x >> y;
 	location base(x, y);
 
-	location center(44, 44);
 
-	location target(44, 44);
 
 
 	while (true)
@@ -376,6 +449,8 @@ int main()
 
 		if (input)
 		{
+			cout << loc_number << endl;
+
 			//sleep a little to make sure that the file was written bt the server
 			std::this_thread::sleep_for(std::chrono::milliseconds(5));
 
@@ -403,14 +478,15 @@ int main()
 				getline(input, line);
 				istringstream iss(line);
 				if (current_line == loc_number) break;
+
 				char ch;
 				while (iss >> ch) {
 					grid[grid_line].push_back(ch);
 				}
 				grid_line += 1;
+
 				
 			}
-
 			//current phases, MINING, CENTER, ATTACK
 			string phase = "";
 			
@@ -465,7 +541,7 @@ int main()
 			//calculating closest target and prioritizing those targets using calculateHeuristic.
 			//Manhattan distance.
 			vector<int> heuristicsTargetList;
-			for (const auto& t : targetList) {
+			for (const auto& t : targetListings) {
 				heuristicsTargetList.push_back(calculateHeuristic(current, t));
 			}
 
@@ -477,12 +553,12 @@ int main()
 			bool centerPhase = false;
 			bool attackPhase = false;
 			//check if in center currently
-			bool inCenter = find(centerSquare.begin(), centerSquare.end(), current) != centerSquare.end();
+			bool inCenter = find(mainSquare.begin(), mainSquare.end(), current) != mainSquare.end();
 
 			//basic strategy laid out, mine resources before round 140, then round 140 start moving towards center, during which
 			//u also mine along the way, as well as attack if running into any players directly and also prioritize
 			//getting into the center over attacking first as to try to avoid acid first then attack players as close to center
-			if (round < 140) {
+			if (round < acid_round) {
 				if (!battery && (iron >= 1 && osmium >= 1)) {
 					target = base;
 
@@ -498,7 +574,7 @@ int main()
 					target = resourceLoc;
 				}
 				else {
-					target = targetList[closestTarget];
+					target = targetListings[closestTarget];
 				}
 
 			}
@@ -544,11 +620,11 @@ int main()
 				previousPosition = path[0];
 				cout << "Current Position: " << "(" << path[0].x << ", " << path[0].y << ")" << endl;
 				if (path.size() > 1) {
-					auto targetInList = find(targetList.begin(), targetList.end(), target);
+					auto targetInList = find(targetListings.begin(), targetListings.end(), target);
 					cout << "Next Position: " << "(" << path[1].x << ", " << path[1].y << ")" << endl;
 					if (path[1] == target && grid[target.y][target.x] == '.' && target != (center)) {
-						if (!targetList.empty()) {
-							targetList.erase(targetInList);
+						if (!targetListings.empty()) {
+							targetListings.erase(targetInList);
 							path.clear();
 							vector<location> path = pathFind(current, target, grid, id);
 						}
@@ -557,8 +633,8 @@ int main()
 				
 				else {
 					cout << "End of path" << endl; //removes target once reached
-					if (!targetList.empty()) {
-						targetList.erase(targetList.begin() + closestTarget);
+					if (!targetListings.empty()) {
+						targetListings.erase(targetListings.begin() + closestTarget);
 					}
 				}
 			}
