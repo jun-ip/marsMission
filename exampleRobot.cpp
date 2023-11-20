@@ -34,7 +34,7 @@ int main()
 				".txt";
 			std::ofstream response(ourFileName);
 			//..
-			//response << "M U\n";
+			response << "M U\n";
 
 			response.close();
 

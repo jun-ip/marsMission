@@ -20,7 +20,7 @@
 #endif
 #undef min
 
-int currentFollow = -2;
+int currentFollow = -1;
 
 
 gl2d::Renderer2D renderer;
@@ -57,10 +57,10 @@ struct GameplayState
 
 	bool closeGame = 0;
 	
-	bool evictUnresponsivePlayers = 1;
+	bool evictUnresponsivePlayers = 0;
 	float currentWaitingTime = 5;
 	bool closeGameWhenWinning = 0;
-	bool pause = 1;
+	bool pause = 0;
 
 
 }gameplayState;
@@ -1028,7 +1028,7 @@ void sendManualCommand()
 }
 
 
-float cameraZoom = 0.198;
+float cameraZoom = 0.145;
 
 //vector pos not id
 bool simulateFog = true;

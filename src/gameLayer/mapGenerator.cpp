@@ -342,3 +342,5 @@ struct Map generate_world(glm::ivec2 maze_size, int seed, bool fewerResources)
 	return final_map;
 }
 
+
+

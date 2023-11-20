@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{81C9E8F3-8535-3372-BC79-5941C3763828}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>mygame</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\PROJECTS\marsMission\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mygame.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mygame</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\PROJECTS\marsMission\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mygame.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mygame</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\PROJECTS\marsMission\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">mygame.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">mygame</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\PROJECTS\marsMission\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">mygame.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">mygame</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\PROJECTS\marsMission\include;G:\PROJECTS\marsMission\include\gameLayer;G:\PROJECTS\marsMission\include\platform;G:\PROJECTS\marsMission\thirdparty\glm\include;G:\PROJECTS\marsMission\thirdparty\glm;G:\PROJECTS\marsMission\thirdparty\glfw-3.3.2\include;G:\PROJECTS\marsMission\thirdparty\glad\include;G:\PROJECTS\marsMission\thirdparty\stb_image\include;G:\PROJECTS\marsMission\thirdparty\stb_truetype\include;G:\PROJECTS\marsMission\thirdparty\gl2d\include;G:\PROJECTS\marsMission\thirdparty\imgui-docking\imgui;G:\PROJECTS\marsMission\thirdparty\profilerLib\include;G:\PROJECTS\marsMission\thirdparty\glui\include;G:\PROJECTS\marsMission\thirdparty\raudio\include;G:\PROJECTS\marsMission\thirdparty\FastNoiseSIMD\FastNoiseSIMD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;RESOURCES_PATH="G:/PROJECTS/marsMission/resources/";_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;RESOURCES_PATH=\"G:/PROJECTS/marsMission/resources/\";_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\PROJECTS\marsMission\include;G:\PROJECTS\marsMission\include\gameLayer;G:\PROJECTS\marsMission\include\platform;G:\PROJECTS\marsMission\thirdparty\glm\include;G:\PROJECTS\marsMission\thirdparty\glm;G:\PROJECTS\marsMission\thirdparty\glfw-3.3.2\include;G:\PROJECTS\marsMission\thirdparty\glad\include;G:\PROJECTS\marsMission\thirdparty\stb_image\include;G:\PROJECTS\marsMission\thirdparty\stb_truetype\include;G:\PROJECTS\marsMission\thirdparty\gl2d\include;G:\PROJECTS\marsMission\thirdparty\imgui-docking\imgui;G:\PROJECTS\marsMission\thirdparty\profilerLib\include;G:\PROJECTS\marsMission\thirdparty\glui\include;G:\PROJECTS\marsMission\thirdparty\raudio\include;G:\PROJECTS\marsMission\thirdparty\FastNoiseSIMD\FastNoiseSIMD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\PROJECTS\marsMission\include;G:\PROJECTS\marsMission\include\gameLayer;G:\PROJECTS\marsMission\include\platform;G:\PROJECTS\marsMission\thirdparty\glm\include;G:\PROJECTS\marsMission\thirdparty\glm;G:\PROJECTS\marsMission\thirdparty\glfw-3.3.2\include;G:\PROJECTS\marsMission\thirdparty\glad\include;G:\PROJECTS\marsMission\thirdparty\stb_image\include;G:\PROJECTS\marsMission\thirdparty\stb_truetype\include;G:\PROJECTS\marsMission\thirdparty\gl2d\include;G:\PROJECTS\marsMission\thirdparty\imgui-docking\imgui;G:\PROJECTS\marsMission\thirdparty\profilerLib\include;G:\PROJECTS\marsMission\thirdparty\glui\include;G:\PROJECTS\marsMission\thirdparty\raudio\include;G:\PROJECTS\marsMission\thirdparty\FastNoiseSIMD\FastNoiseSIMD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>thirdparty\glfw-3.3.2\src\Debug\glfw3.lib;thirdparty\glad\Debug\glad.lib;thirdparty\stb_image\Debug\stb_image.lib;thirdparty\stb_truetype\Debug\stb_truetype.lib;thirdparty\gl2d\Debug\gl2d.lib;thirdparty\imgui-docking\Debug\imgui.lib;thirdparty\glui\Debug\glui.lib;thirdparty\raudio\Debug\raudio.lib;thirdparty\FastNoiseSIMD\Debug\fastNoiseSIMD.lib;thirdparty\glfw-3.3.2\src\Debug\glfw3.lib;thirdparty\gl2d\Debug\gl2d.lib;thirdparty\glad\Debug\glad.lib;thirdparty\stb_image\Debug\stb_image.lib;thirdparty\stb_truetype\Debug\stb_truetype.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/PROJECTS/marsMission/Debug/mygame.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/PROJECTS/marsMission/Debug/mygame.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\PROJECTS\marsMission\include;G:\PROJECTS\marsMission\include\gameLayer;G:\PROJECTS\marsMission\include\platform;G:\PROJECTS\marsMission\thirdparty\glm\include;G:\PROJECTS\marsMission\thirdparty\glm;G:\PROJECTS\marsMission\thirdparty\glfw-3.3.2\include;G:\PROJECTS\marsMission\thirdparty\glad\include;G:\PROJECTS\marsMission\thirdparty\stb_image\include;G:\PROJECTS\marsMission\thirdparty\stb_truetype\include;G:\PROJECTS\marsMission\thirdparty\gl2d\include;G:\PROJECTS\marsMission\thirdparty\imgui-docking\imgui;G:\PROJECTS\marsMission\thirdparty\profilerLib\include;G:\PROJECTS\marsMission\thirdparty\glui\include;G:\PROJECTS\marsMission\thirdparty\raudio\include;G:\PROJECTS\marsMission\thirdparty\FastNoiseSIMD\FastNoiseSIMD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;RESOURCES_PATH="G:/PROJECTS/marsMission/resources/";_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;RESOURCES_PATH=\"G:/PROJECTS/marsMission/resources/\";_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\PROJECTS\marsMission\include;G:\PROJECTS\marsMission\include\gameLayer;G:\PROJECTS\marsMission\include\platform;G:\PROJECTS\marsMission\thirdparty\glm\include;G:\PROJECTS\marsMission\thirdparty\glm;G:\PROJECTS\marsMission\thirdparty\glfw-3.3.2\include;G:\PROJECTS\marsMission\thirdparty\glad\include;G:\PROJECTS\marsMission\thirdparty\stb_image\include;G:\PROJECTS\marsMission\thirdparty\stb_truetype\include;G:\PROJECTS\marsMission\thirdparty\gl2d\include;G:\PROJECTS\marsMission\thirdparty\imgui-docking\imgui;G:\PROJECTS\marsMission\thirdparty\profilerLib\include;G:\PROJECTS\marsMission\thirdparty\glui\include;G:\PROJECTS\marsMission\thirdparty\raudio\include;G:\PROJECTS\marsMission\thirdparty\FastNoiseSIMD\FastNoiseSIMD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\PROJECTS\marsMission\include;G:\PROJECTS\marsMission\include\gameLayer;G:\PROJECTS\marsMission\include\platform;G:\PROJECTS\marsMission\thirdparty\glm\include;G:\PROJECTS\marsMission\thirdparty\glm;G:\PROJECTS\marsMission\thirdparty\glfw-3.3.2\include;G:\PROJECTS\marsMission\thirdparty\glad\include;G:\PROJECTS\marsMission\thirdparty\stb_image\include;G:\PROJECTS\marsMission\thirdparty\stb_truetype\include;G:\PROJECTS\marsMission\thirdparty\gl2d\include;G:\PROJECTS\marsMission\thirdparty\imgui-docking\imgui;G:\PROJECTS\marsMission\thirdparty\profilerLib\include;G:\PROJECTS\marsMission\thirdparty\glui\include;G:\PROJECTS\marsMission\thirdparty\raudio\include;G:\PROJECTS\marsMission\thirdparty\FastNoiseSIMD\FastNoiseSIMD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>thirdparty\glfw-3.3.2\src\Release\glfw3.lib;thirdparty\glad\Release\glad.lib;thirdparty\stb_image\Release\stb_image.lib;thirdparty\stb_truetype\Release\stb_truetype.lib;thirdparty\gl2d\Release\gl2d.lib;thirdparty\imgui-docking\Release\imgui.lib;thirdparty\glui\Release\glui.lib;thirdparty\raudio\Release\raudio.lib;thirdparty\FastNoiseSIMD\Release\fastNoiseSIMD.lib;thirdparty\glfw-3.3.2\src\Release\glfw3.lib;thirdparty\gl2d\Release\gl2d.lib;thirdparty\glad\Release\glad.lib;thirdparty\stb_image\Release\stb_image.lib;thirdparty\stb_truetype\Release\stb_truetype.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/PROJECTS/marsMission/Release/mygame.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/PROJECTS/marsMission/Release/mygame.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\PROJECTS\marsMission\include;G:\PROJECTS\marsMission\include\gameLayer;G:\PROJECTS\marsMission\include\platform;G:\PROJECTS\marsMission\thirdparty\glm\include;G:\PROJECTS\marsMission\thirdparty\glm;G:\PROJECTS\marsMission\thirdparty\glfw-3.3.2\include;G:\PROJECTS\marsMission\thirdparty\glad\include;G:\PROJECTS\marsMission\thirdparty\stb_image\include;G:\PROJECTS\marsMission\thirdparty\stb_truetype\include;G:\PROJECTS\marsMission\thirdparty\gl2d\include;G:\PROJECTS\marsMission\thirdparty\imgui-docking\imgui;G:\PROJECTS\marsMission\thirdparty\profilerLib\include;G:\PROJECTS\marsMission\thirdparty\glui\include;G:\PROJECTS\marsMission\thirdparty\raudio\include;G:\PROJECTS\marsMission\thirdparty\FastNoiseSIMD\FastNoiseSIMD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;RESOURCES_PATH="G:/PROJECTS/marsMission/resources/";_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;RESOURCES_PATH=\"G:/PROJECTS/marsMission/resources/\";_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\PROJECTS\marsMission\include;G:\PROJECTS\marsMission\include\gameLayer;G:\PROJECTS\marsMission\include\platform;G:\PROJECTS\marsMission\thirdparty\glm\include;G:\PROJECTS\marsMission\thirdparty\glm;G:\PROJECTS\marsMission\thirdparty\glfw-3.3.2\include;G:\PROJECTS\marsMission\thirdparty\glad\include;G:\PROJECTS\marsMission\thirdparty\stb_image\include;G:\PROJECTS\marsMission\thirdparty\stb_truetype\include;G:\PROJECTS\marsMission\thirdparty\gl2d\include;G:\PROJECTS\marsMission\thirdparty\imgui-docking\imgui;G:\PROJECTS\marsMission\thirdparty\profilerLib\include;G:\PROJECTS\marsMission\thirdparty\glui\include;G:\PROJECTS\marsMission\thirdparty\raudio\include;G:\PROJECTS\marsMission\thirdparty\FastNoiseSIMD\FastNoiseSIMD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\PROJECTS\marsMission\include;G:\PROJECTS\marsMission\include\gameLayer;G:\PROJECTS\marsMission\include\platform;G:\PROJECTS\marsMission\thirdparty\glm\include;G:\PROJECTS\marsMission\thirdparty\glm;G:\PROJECTS\marsMission\thirdparty\glfw-3.3.2\include;G:\PROJECTS\marsMission\thirdparty\glad\include;G:\PROJECTS\marsMission\thirdparty\stb_image\include;G:\PROJECTS\marsMission\thirdparty\stb_truetype\include;G:\PROJECTS\marsMission\thirdparty\gl2d\include;G:\PROJECTS\marsMission\thirdparty\imgui-docking\imgui;G:\PROJECTS\marsMission\thirdparty\profilerLib\include;G:\PROJECTS\marsMission\thirdparty\glui\include;G:\PROJECTS\marsMission\thirdparty\raudio\include;G:\PROJECTS\marsMission\thirdparty\FastNoiseSIMD\FastNoiseSIMD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>thirdparty\glfw-3.3.2\src\MinSizeRel\glfw3.lib;thirdparty\glad\MinSizeRel\glad.lib;thirdparty\stb_image\MinSizeRel\stb_image.lib;thirdparty\stb_truetype\MinSizeRel\stb_truetype.lib;thirdparty\gl2d\MinSizeRel\gl2d.lib;thirdparty\imgui-docking\MinSizeRel\imgui.lib;thirdparty\glui\MinSizeRel\glui.lib;thirdparty\raudio\MinSizeRel\raudio.lib;thirdparty\FastNoiseSIMD\MinSizeRel\fastNoiseSIMD.lib;thirdparty\glfw-3.3.2\src\MinSizeRel\glfw3.lib;thirdparty\gl2d\MinSizeRel\gl2d.lib;thirdparty\glad\MinSizeRel\glad.lib;thirdparty\stb_image\MinSizeRel\stb_image.lib;thirdparty\stb_truetype\MinSizeRel\stb_truetype.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/PROJECTS/marsMission/MinSizeRel/mygame.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/PROJECTS/marsMission/MinSizeRel/mygame.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\PROJECTS\marsMission\include;G:\PROJECTS\marsMission\include\gameLayer;G:\PROJECTS\marsMission\include\platform;G:\PROJECTS\marsMission\thirdparty\glm\include;G:\PROJECTS\marsMission\thirdparty\glm;G:\PROJECTS\marsMission\thirdparty\glfw-3.3.2\include;G:\PROJECTS\marsMission\thirdparty\glad\include;G:\PROJECTS\marsMission\thirdparty\stb_image\include;G:\PROJECTS\marsMission\thirdparty\stb_truetype\include;G:\PROJECTS\marsMission\thirdparty\gl2d\include;G:\PROJECTS\marsMission\thirdparty\imgui-docking\imgui;G:\PROJECTS\marsMission\thirdparty\profilerLib\include;G:\PROJECTS\marsMission\thirdparty\glui\include;G:\PROJECTS\marsMission\thirdparty\raudio\include;G:\PROJECTS\marsMission\thirdparty\FastNoiseSIMD\FastNoiseSIMD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;RESOURCES_PATH="G:/PROJECTS/marsMission/resources/";_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;RESOURCES_PATH=\"G:/PROJECTS/marsMission/resources/\";_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\PROJECTS\marsMission\include;G:\PROJECTS\marsMission\include\gameLayer;G:\PROJECTS\marsMission\include\platform;G:\PROJECTS\marsMission\thirdparty\glm\include;G:\PROJECTS\marsMission\thirdparty\glm;G:\PROJECTS\marsMission\thirdparty\glfw-3.3.2\include;G:\PROJECTS\marsMission\thirdparty\glad\include;G:\PROJECTS\marsMission\thirdparty\stb_image\include;G:\PROJECTS\marsMission\thirdparty\stb_truetype\include;G:\PROJECTS\marsMission\thirdparty\gl2d\include;G:\PROJECTS\marsMission\thirdparty\imgui-docking\imgui;G:\PROJECTS\marsMission\thirdparty\profilerLib\include;G:\PROJECTS\marsMission\thirdparty\glui\include;G:\PROJECTS\marsMission\thirdparty\raudio\include;G:\PROJECTS\marsMission\thirdparty\FastNoiseSIMD\FastNoiseSIMD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\PROJECTS\marsMission\include;G:\PROJECTS\marsMission\include\gameLayer;G:\PROJECTS\marsMission\include\platform;G:\PROJECTS\marsMission\thirdparty\glm\include;G:\PROJECTS\marsMission\thirdparty\glm;G:\PROJECTS\marsMission\thirdparty\glfw-3.3.2\include;G:\PROJECTS\marsMission\thirdparty\glad\include;G:\PROJECTS\marsMission\thirdparty\stb_image\include;G:\PROJECTS\marsMission\thirdparty\stb_truetype\include;G:\PROJECTS\marsMission\thirdparty\gl2d\include;G:\PROJECTS\marsMission\thirdparty\imgui-docking\imgui;G:\PROJECTS\marsMission\thirdparty\profilerLib\include;G:\PROJECTS\marsMission\thirdparty\glui\include;G:\PROJECTS\marsMission\thirdparty\raudio\include;G:\PROJECTS\marsMission\thirdparty\FastNoiseSIMD\FastNoiseSIMD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>thirdparty\glfw-3.3.2\src\RelWithDebInfo\glfw3.lib;thirdparty\glad\RelWithDebInfo\glad.lib;thirdparty\stb_image\RelWithDebInfo\stb_image.lib;thirdparty\stb_truetype\RelWithDebInfo\stb_truetype.lib;thirdparty\gl2d\RelWithDebInfo\gl2d.lib;thirdparty\imgui-docking\RelWithDebInfo\imgui.lib;thirdparty\glui\RelWithDebInfo\glui.lib;thirdparty\raudio\RelWithDebInfo\raudio.lib;thirdparty\FastNoiseSIMD\RelWithDebInfo\fastNoiseSIMD.lib;thirdparty\glfw-3.3.2\src\RelWithDebInfo\glfw3.lib;thirdparty\gl2d\RelWithDebInfo\gl2d.lib;thirdparty\glad\RelWithDebInfo\glad.lib;thirdparty\stb_image\RelWithDebInfo\stb_image.lib;thirdparty\stb_truetype\RelWithDebInfo\stb_truetype.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/PROJECTS/marsMission/RelWithDebInfo/mygame.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/PROJECTS/marsMission/RelWithDebInfo/mygame.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\PROJECTS\marsMission\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule G:/PROJECTS/marsMission/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/PROJECTS/marsMission -BG:/PROJECTS/marsMission --check-stamp-file G:/PROJECTS/marsMission/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;G:\PROJECTS\marsMission\CMakeFiles\3.28.0-rc4\CMakeCCompiler.cmake;G:\PROJECTS\marsMission\CMakeFiles\3.28.0-rc4\CMakeCXXCompiler.cmake;G:\PROJECTS\marsMission\CMakeFiles\3.28.0-rc4\CMakeRCCompiler.cmake;G:\PROJECTS\marsMission\CMakeFiles\3.28.0-rc4\CMakeSystem.cmake;G:\PROJECTS\marsMission\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\PROJECTS\marsMission\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule G:/PROJECTS/marsMission/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/PROJECTS/marsMission -BG:/PROJECTS/marsMission --check-stamp-file G:/PROJECTS/marsMission/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;G:\PROJECTS\marsMission\CMakeFiles\3.28.0-rc4\CMakeCCompiler.cmake;G:\PROJECTS\marsMission\CMakeFiles\3.28.0-rc4\CMakeCXXCompiler.cmake;G:\PROJECTS\marsMission\CMakeFiles\3.28.0-rc4\CMakeRCCompiler.cmake;G:\PROJECTS\marsMission\CMakeFiles\3.28.0-rc4\CMakeSystem.cmake;G:\PROJECTS\marsMission\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\PROJECTS\marsMission\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule G:/PROJECTS/marsMission/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/PROJECTS/marsMission -BG:/PROJECTS/marsMission --check-stamp-file G:/PROJECTS/marsMission/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;G:\PROJECTS\marsMission\CMakeFiles\3.28.0-rc4\CMakeCCompiler.cmake;G:\PROJECTS\marsMission\CMakeFiles\3.28.0-rc4\CMakeCXXCompiler.cmake;G:\PROJECTS\marsMission\CMakeFiles\3.28.0-rc4\CMakeRCCompiler.cmake;G:\PROJECTS\marsMission\CMakeFiles\3.28.0-rc4\CMakeSystem.cmake;G:\PROJECTS\marsMission\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\PROJECTS\marsMission\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule G:/PROJECTS/marsMission/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/PROJECTS/marsMission -BG:/PROJECTS/marsMission --check-stamp-file G:/PROJECTS/marsMission/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;G:\PROJECTS\marsMission\CMakeFiles\3.28.0-rc4\CMakeCCompiler.cmake;G:\PROJECTS\marsMission\CMakeFiles\3.28.0-rc4\CMakeCXXCompiler.cmake;G:\PROJECTS\marsMission\CMakeFiles\3.28.0-rc4\CMakeRCCompiler.cmake;G:\PROJECTS\marsMission\CMakeFiles\3.28.0-rc4\CMakeSystem.cmake;G:\PROJECTS\marsMission\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\PROJECTS\marsMission\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="G:\PROJECTS\marsMission\src\gameLayer\adons.cpp" />
+    <ClCompile Include="G:\PROJECTS\marsMission\src\gameLayer\gameLayer.cpp" />
+    <ClCompile Include="G:\PROJECTS\marsMission\src\gameLayer\mapGenerator.cpp" />
+    <ClCompile Include="G:\PROJECTS\marsMission\src\gameLayer\stuff.cpp" />
+    <ClCompile Include="G:\PROJECTS\marsMission\src\platform\glfwMain.cpp" />
+    <ClCompile Include="G:\PROJECTS\marsMission\src\platform\headerOnly.cpp" />
+    <ClCompile Include="G:\PROJECTS\marsMission\src\platform\opterPlatformFunctions.cpp" />
+    <ClCompile Include="G:\PROJECTS\marsMission\src\platform\platformInput.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="G:\PROJECTS\marsMission\ZERO_CHECK.vcxproj">
+      <Project>{BD6E58FD-F0EA-37F9-837A-D48077F69FD0}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="G:\PROJECTS\marsMission\thirdparty\FastNoiseSIMD\fastNoiseSIMD.vcxproj">
+      <Project>{BCE884BC-0168-3C0C-BECE-1E656B53C2A2}</Project>
+      <Name>fastNoiseSIMD</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\PROJECTS\marsMission\thirdparty\gl2d\gl2d.vcxproj">
+      <Project>{607A8225-F819-37AC-A4D2-723AD5F73D31}</Project>
+      <Name>gl2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\PROJECTS\marsMission\thirdparty\glad\glad.vcxproj">
+      <Project>{048D1EB6-AABB-3E4B-AD22-A841F894FBE0}</Project>
+      <Name>glad</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\PROJECTS\marsMission\thirdparty\glfw-3.3.2\src\glfw.vcxproj">
+      <Project>{06C723A9-5B25-396F-8C92-0382213F5E63}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\PROJECTS\marsMission\thirdparty\glui\glui.vcxproj">
+      <Project>{A1DD47B0-958A-317F-9C55-65D319A8176C}</Project>
+      <Name>glui</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\PROJECTS\marsMission\thirdparty\imgui-docking\imgui.vcxproj">
+      <Project>{C6ED7152-2C94-3046-B6C3-8B501F48E749}</Project>
+      <Name>imgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\PROJECTS\marsMission\thirdparty\raudio\raudio.vcxproj">
+      <Project>{E30EBFD8-5E9C-369D-B635-808C63A900AE}</Project>
+      <Name>raudio</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\PROJECTS\marsMission\thirdparty\stb_image\stb_image.vcxproj">
+      <Project>{6722E8E0-54D4-3156-A58E-4E5C9B725A25}</Project>
+      <Name>stb_image</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\PROJECTS\marsMission\thirdparty\stb_truetype\stb_truetype.vcxproj">
+      <Project>{E462F882-E4B5-3448-B090-33FC92D23C64}</Project>
+      <Name>stb_truetype</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

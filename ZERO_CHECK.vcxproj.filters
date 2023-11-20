@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="G:\PROJECTS\marsMission\CMakeFiles\fec4c045ac85bb0a478b6e8b0b87160e\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DC880E01-2FBE-3BE5-82D0-DE504679CF54}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+^G:\PROJECTS\MARSMISSION\CMAKEFILES\FEC4C045AC85BB0A478B6E8B0B87160E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/PROJECTS/marsMission -BG:/PROJECTS/marsMission --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file G:/PROJECTS/marsMission/mygame.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
